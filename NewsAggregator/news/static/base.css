@@ -1,0 +1,239 @@
+.card{
+    border-radius: 16px;
+}
+.card-img{
+    border-radius: 16px;
+/*     margin:1vw */
+    padding: 10px
+}
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+
+.card{
+    border-radius: 16px;
+  background-image: url(https://bi.im-g.pl/im/68/bd/1b/z29088360IC,-Nie-chce-fundowac-dzieciom-cmentarnego-maratonu--.jpg)  background-image: url(https://bi.im-g.pl/im/68/bd/1b/z29088360IC,-Nie-chce-fundowac-dzieciom-cmentarnego-maratonu--.jpg)  background-image: url(https://bi.im-g.pl/im/68/bd/1b/z29088360IC,-Nie-chce-fundowac-dzieciom-cmentarnego-maratonu--.jpg)  background-image: url(https://bi.im-g.pl/im/68/bd/1b/z29088360IC,-Nie-chce-fundowac-dzieciom-cmentarnego-maratonu--.jpg)
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.4s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.content {
+    width: 100%;
+/*     position: absolute; */
+    top:50vh;
+    border-radius: 16px;
+    
+}
+
+.area{
+    margin-top: 180px;
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+/*     height:100vh; */
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(25, 255, 25);
+    animation: animate 25s linear infinite;
+    bottom: 0;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+        border-radius: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+/* Style the navbar links */
+#navbar a {
+  /*float: left;*/
+  /*color: black;*/
+  text-align: center;
+  /*padding: 12px;*/
+  text-decoration: none;
+  /*font-size: 18px;*/
+  /*line-height: 25px;*/
+  /*border-radius: 4px;*/
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+.loader {
+    display: none;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid rgba(25, 255, 25); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 50px;*/
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card-columns {
+  text-align: center;
+}
+
+a .card-title, a .card-title:hover, a .card-title:active{
+    text-decoration: none;
+    color: darkseagreen;
+}
