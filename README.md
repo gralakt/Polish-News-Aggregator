@@ -1,5 +1,5 @@
 # Polish News Aggregator
-This web application, aggregates syndicated web content from polish news websites in one location for easy viewing.
+This simple web application, aggregates syndicated web content from polish news websites in one location for easy viewing.
 
 ## How doe's it work?
   1. It scrapes the web for the articles.
